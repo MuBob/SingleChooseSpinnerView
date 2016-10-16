@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SingleChooseSpinner">
+        <attr name="titleShow_SingleChooseSpinner" format="boolean"/>
+        <attr name="titleWidth_SingleChooseSpinner" format="dimension"/>
+        <attr name="titleLeftMargin_SingleChooseSpinner" format="dimension"/>
+        <attr name="titleRightMargin_SingleChooseSpinner" format="dimension"/>
+        <attr name="line1Height_SingleChooseSpinner" format="dimension"/>
+        <attr name="listRaw_SingleChooseSpinner" format="integer"/>
+        <attr name="listPerHeight_SingleChooseSpinner" format="dimension"/>
+        <attr name="titleTextSize_SingleChooseSpinner" format="dimension"/>
+        <attr name="contentTextSize_SingleChooseSpinner" format="dimension"/>
+        <attr name="titleTextColor_SingleChooseSpinner" format="color"/>
+        <attr name="contentTextColor_SingleChooseSpinner" format="color"/>
+        <attr name="titleText_SingleChooseSpinner" format="string"/>
+        <attr name="contentText_SingleChooseSpinner" format="string"/>
+        <attr name="contentLineMargin_SingleChooseSpinner" format="dimension"/>
+        <attr name="contentLineShow_SingleChooseSpinner" format="boolean"/>
+    </declare-styleable>
+</resources>

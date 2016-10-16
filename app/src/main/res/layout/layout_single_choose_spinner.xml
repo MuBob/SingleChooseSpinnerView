@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/line1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line1_height"
+        android:background="@null"
+        >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin_horizontal"
+            android:text="报道项目"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/title_text_size"/>
+
+        <RelativeLayout
+            android:id="@+id/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/content_margin_left"
+            android:layout_marginRight="@dimen/item_margin_horizontal"
+            android:background="@null"
+            >
+
+            <ImageView
+                android:id="@+id/spinner_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right"/>
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/spinner_image"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="纳什空间北京朝阳"
+                android:textColor="@color/content_text_color"
+                android:textSize="@dimen/content_text_size"/>
+
+            <TextView
+                android:id="@+id/line_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/content_text"
+                android:layout_marginTop="8dp"
+                android:background="@color/background_line"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_line"
+            />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@null"/>
+    </RelativeLayout>
+</LinearLayout>
